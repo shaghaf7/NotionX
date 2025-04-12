@@ -1,50 +1,103 @@
-# React + TypeScript + Vite
+# 🧠 NotionX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NotionX** is a modern, minimalist note-taking app inspired by Notion — built using **React**, **TypeScript**, and **Vite**. It allows users to create, tag, and manage notes, all stored locally in the browser. No login required. No cloud dependency. Just fast, intuitive note-taking right out of the box.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+![demo](./https://notion-x-wheat.vercel.app/
+).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📸 Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+> *(Add your screenshots in `/public` and link them below)*
+
+![Home Page](./public/screenshot-home.png)
+![Note Editor](./public/screenshot-editor.png)
+
+---
+
+## ✨ Features
+
+- 📝 **Create, Edit, and Delete Notes**  
+  Add and manage notes with a simple, clean UI.
+
+- 🏷️ **Tag System**  
+  Organize notes using tags like `#work`, `#personal`, etc., for better filtering.
+
+- 🔍 **Search & Filter**  
+  Quickly search your notes or filter by tags.
+
+- 💾 **Local Storage Based**  
+  All notes are saved in your browser’s local storage — no database needed.
+
+- ⚡ **Lightning-Fast Vite Build**  
+  Optimized for speed and developer experience using Vite.
+
+- 🧩 **Modular Codebase**  
+  Clean component structure with reusable hooks and strong typing.
+
+- 🌙 **Dark Mode Ready** *(coming soon)*
+
+---
+
+## 🛠 Tech Stack
+
+| Tech         | Description                         |
+|--------------|-------------------------------------|
+| React        | UI library                          |
+| TypeScript   | Type safety                         |
+| Vite         | Fast dev environment & build tool   |
+| LocalStorage | Browser-based storage               |
+| CSS Modules / Tailwind *(optional)* | Styling      |
+
+---
+
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Node.js (v14 or newer)
+- npm or yarn
+
+### Steps
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/shaghaf7/NotionX.git
+cd NotionX
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2.Install Dependency
+```bash
+npm install
+# or
+yarn install
 ```
+3.Run the Development Server
+```bash
+npm run dev
+# or
+yarn dev
+```
+💡 Usage Guide
+
+- Click "Add Note" to create a new note.
+- Use #tags in your note to automatically categorize it.
+- Search notes by typing in the search bar.
+- Notes are auto-saved in your browser's local storage.
+
+🔒 Data Persistence
+
+- All note data is stored only in your browser via localStorage. This means:
+- Your data is private to your device.
+- No internet connection is required.
+- Clearing browser storage or cache will remove all saved notes.
+
+👨‍💻 Author
+Made with 💙 by Shaghaf Kashif
+
+
