@@ -3,22 +3,11 @@
 **NotionX** is a modern, minimalist note-taking app inspired by Notion — built using **React**, **TypeScript**, and **Vite**. It allows users to create, tag, and manage notes, all stored locally in the browser. No login required. No cloud dependency. Just fast, intuitive note-taking right out of the box.
 
 ---
-
 ## 🚀 Live Demo
-![demo](./https://notion-x-wheat.vercel.app/
-).
 
+[Click here to try NotionX 🚀](https://notion-x-wheat.vercel.app/
+)
 
----
-
-## 📸 Screenshots
-
-> *(Add your screenshots in `/public` and link them below)*
-
-![Home Page](./public/screenshot-home.png)
-![Note Editor](./public/screenshot-editor.png)
-
----
 
 ## ✨ Features
 
